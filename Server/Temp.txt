@@ -1,1 +1,0 @@
-This folder is for pushing a folder for organizing the server side code for later assignments.

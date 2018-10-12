@@ -1,0 +1,165 @@
+/* My CSS style sheet. Design for mobile first */
+/* Persisten CSS */
+html, body, footer{
+    padding: 0;
+    margin: 0;
+}
+.navMenuItem {
+    border-color: white;
+    border-right-style: solid;
+}
+.profileIcon {
+    border-color: white;
+    border-style: solid;
+}
+hr {
+    margin: 5%;
+    color: aliceblue;
+}
+body {
+    background-color: rgb(48, 48, 48);
+    background-image: url("../../assets/images/starspot.jpg");
+    font-family: 'Anton', sans-serif;
+    color: white;
+}
+footer, header, #topNavbar > .navMenuContainer {
+    background-color: black;
+}
+.link {
+    color: white;
+}
+.MoreInfo {
+    background-color: #333;
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 2%;
+    color: white;
+    text-align: left;
+    cursor: pointer;
+    width: 75%;
+}
+.MoreInfo a {
+    color: white;
+}
+.MoreInfo:hover{
+    background-color: dimgray;
+}
+
+footer {
+    display: flex;
+}
+footer > .footerColumn {
+    flex: 50%;
+    text-align: center;
+}
+.footerColumn > ul {
+    list-style-type: none;
+    color: white;
+}
+.additionalLinks > li a {
+    color: white;
+}
+/* CSS for mobile Site */
+h3 {
+    margin: 5%;
+}
+.navMenuItem {
+    border-color: white;
+    border-right-style: solid;
+    border-bottom-style: solid;
+}
+/* For Navigation */
+#topNavBar {
+    padding: 0;
+    margin: 0;
+}
+/* For Navigation */
+#topNavbar > .navMenuContainer {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navMenuItem {
+    float: left;
+}
+.profileIcon {
+    float: right;
+}
+.menuItemLink {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+.navMenuItem a:hover, .profileIcon a:hover  {
+    background-color: rgb(107, 107, 107);
+}
+
+/* For Information Cards */
+.card {
+    background-color: gray;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: left;
+    padding: 2%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+/* CSS for Desktop Site */
+@media only screen and (min-width: 768px) {
+    /* Information Cards */
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(102, 85, 85, 0.932);
+        max-width: 300px;
+        margin: auto;
+        text-align: left;
+        flex: 33.33%;
+        padding: 5px;
+    }
+    .card-wrapper {
+        display: flex;
+        margin-bottom: 5%;
+    }
+    header{
+        background-color:whitesmoke;
+        padding: 0;
+    }
+    #topNavBar {
+        padding: 0;
+        margin: 0;
+    }
+    /* For Navigation */
+    #topNavbar > .navMenuContainer {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    
+    .navMenuItem {
+        float: left;
+    }
+    .profileIcon {
+        float: right;
+    }
+    .menuItemLink {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    .navMenuItem a:hover, .profileIcon a:hover {
+        background-color: rgb(107, 107, 107);
+    }
+
+    h3 {
+        margin: 2.5%;
+    }
+}
