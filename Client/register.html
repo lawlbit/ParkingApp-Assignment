@@ -5,6 +5,7 @@
 <head>
     <title>Create Account</title>
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="styles/registerStyles.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/apple-touch-icon.png">
@@ -19,31 +20,36 @@
 <header>
     <div id="topNavbar">
         <ul class="navMenuContainer">
-            <li class="navMenuItem"><a class="menuItemLink link" href="home.html">Home</a></li>
+            <li class="navMenuItem"><a class="menuItemLink link" href="homeAnon.html">Home</a></li>
             <li class="navMenuItem"><a class="menuItemLink link" href="search.html">Search</a></li>
-            <li class="navMenuItem"><a class="menuItemLink link" href="occupied.html">Occupancy</a></li>
-            <li class="navMenuItem"><a class="menuItemLink link" href="parkingManagement.html">Management</a></li>
-            <li class="profileIcon"><a class="menuItemLink link" href="profile.html"><i class="fas fa-user-alt"></i></a></li>
+            <!-- <li class="profileIcon"><a class="menuItemLink link" href="register.html"><i class="fas fa-user-alt"></i></a></li> -->
         </ul>
     </div>
 </header>
 
 <body>
-    <form>
-        <div class="formContainer">
-            <h1>Spotted <img src="../assets/images/favicon-16x16.png" alt="Logo"></h1>
-
-            <input type="email" class="email" name="email" value="email" />
-            <input type="password" class="password" name="password" value="password" />
-            <!-- Doing it this way where the div is within the a tag allows for more customization of the button. -->
-            <a href="home.html">
-                <div class="signIn">Sign In</div>
-            </a>
-            <a href="register.html">
-                <div class="signUp">Sign Up</div>
-            </a>
-        </div>
-    </form>
+    <div class="formContainer">
+        <h1>Registration Form</h1>
+        <form method="POST" action="home.html">
+            <input type="email" class="email" name="email" value="email" id="email" />
+            <input type="password" class="password" name="password" value="password" id="pw" />
+            <input type="tel" class="tele" name="tele" id="tel" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
+            <input type="submit" class="submit" id="submit" />
+        </form>
+    </div>
 </body>
+<footer>
+    <div class="footerColumn">
+        <ul id="additionalLinks">
+            <li><a href="help.html" class="link">Help</a></li>
+            <li><a href="https://www.google.com/maps" class="link">Google Maps</a></li>
+        </ul>
+    </div>
+    <div class="footerColumn" id="contactInfo">
+        <p>Created by: Ethan Chan</p>
+        <p>Contact Email: <a href="mailto:chaneh@mcmaser.ca">chaneh@mcmaster.ca</a>.</p>
+    </div>
+</footer>
+
 
 </html>

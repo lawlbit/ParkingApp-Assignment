@@ -25,12 +25,10 @@ hr {
     color: rgb(38, 0, 255);
 }
 body {
-    /* background-color: rgb(48, 48, 48); */
     background:#5f5cf5;
-    /* background-image: url("../../assets/images/starspot.jpg"); */
-    background-size: 100%;
     font-family: 'Anton', sans-serif;
     color: white;
+    height: 100%;
 }
 footer, header, #topNavbar > .navMenuContainer {
     background-color: #ffff6698;
@@ -78,6 +76,7 @@ h1 {
     border-color: rgb(62, 84, 99);
     border-right-style: solid;
     border-bottom-style: solid;
+    border-style: solid;
 }
 /* For Navigation */
 #topNavBar {
