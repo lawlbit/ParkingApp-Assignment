@@ -5,6 +5,7 @@
 <head>
     <title>Welcome to Spotted</title>
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="styles/loginStyles.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/apple-touch-icon.png">
@@ -17,22 +18,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Meta stuff goes -->
 </head>
-<header>
-    <div>
-        <h1>Welcome to Spotted</h1>
-    </div>
-</header>
+<!-- No headers on this page as it assumes the user is not logged in yet! -->
 <body>
-    <div id="loginForm">
-        <form action="home.html">
-            <input type="email" id="email">
-            <input type="password" id="pw">
-            <input type="submit" value="Login">
-        </form>
-    </div>
-    <div id="register">
-        <a href="register.html">Don't have an account?</a>
-    </div>
+    <form>
+        <div class="formContainer">
+            <h1>Spotted <img src="../assets/images/favicon-16x16.png" alt="Logo"></h1>
+
+            <input type="email" class="email" name="email" value="email"/>
+            <input type="password"class="password" name="password" value="password"/>
+            <!-- Doing it this way where the div is within the a tag allows for more customization of the button. -->
+            <a href="home.html">
+                <div class="signIn">Sign In</div>
+            </a>
+            <a href="register.html">
+                <div class="signUp">Sign Up</div>
+            </a>
+        </div>
+    </form>
 </body>
 
 </html>

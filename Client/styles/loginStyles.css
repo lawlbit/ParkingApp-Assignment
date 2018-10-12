@@ -1,0 +1,85 @@
+/* This style sheet pertains to specific styles and designs for the login page */
+body{
+    margin: 0 auto 0 auto;  
+    width:100%; 
+    text-align:center;
+    margin: 20px 0px 20px 0px;   
+}
+  
+p{
+    font-size:12px;
+    text-decoration: none;
+    color:#ffffff;
+}
+  
+h1{
+    font-size:1.5em;
+    color:#000000;
+}
+  
+.formContainer{
+    background:white;
+    width:300px;
+    margin: 0 auto 0 auto;
+    padding:10px 0px 70px 0px;
+    border-bottom: #1e5375 4px solid; 
+}
+  
+.email{
+    background:#ecf0f1;
+    border: #ccc 1px solid;
+    border-bottom: #ccc 2px solid;
+    padding: 8px;
+    width:250px;
+    color:#AAAAAA;
+    margin-top:10px;
+    margin-bottom: 10px;
+    font-size:1em;
+}
+  
+.password{
+    background:#ecf0f1;
+    border: #ccc 1px solid;
+    border-bottom: #ccc 2px solid;
+    padding: 8px;
+    width:250px;
+    font-size:1em;
+}
+  
+.signIn{
+    background:#00b7ff;
+    width:125px;
+    padding-top:5px;
+    padding-bottom:5px;
+    color:white;
+    border: #2788ae 1px solid;
+    margin-top:20px;
+    margin-bottom:20px;
+    float:left;
+    margin-left:16px;
+    font-weight:800;
+    font-size:0.8em;
+}
+  
+.signIn:hover{
+    background:rgb(44, 103, 192); 
+}
+  
+.signUp{
+    float:left;
+    background:#3498db;
+    width:125px;  padding-top:5px;
+    padding-bottom:5px;
+    color:white;
+    border: #113a55 1px solid;
+    
+    margin-top:20px;
+    margin-bottom:20px;
+    margin-left:10px;
+    font-weight:800;
+    font-size:0.8em;
+}
+  
+.signUp:hover{ 
+    background:#3594D2; 
+}

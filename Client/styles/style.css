@@ -1,35 +1,45 @@
-/* My CSS style sheet. Design for mobile first */
+/* My Generic CSS style sheet. 
+Additional stylesheets will be created 
+in addition to this pending on screen.
+Designing for mobile first then the big screen. */
+
 /* Persisten CSS */
 html, body, footer{
     padding: 0;
     margin: 0;
 }
+/* For showing Active screen/page */
+.active {
+    background-color: rgb(65, 78, 255);
+}
 .navMenuItem {
-    border-color: white;
+    border-color: rgb(0, 0, 0);
     border-right-style: solid;
 }
 .profileIcon {
-    border-color: white;
+    border-color: rgb(62, 84, 99);
     border-style: solid;
 }
 hr {
     margin: 5%;
-    color: aliceblue;
+    color: rgb(38, 0, 255);
 }
 body {
-    background-color: rgb(48, 48, 48);
-    background-image: url("../../assets/images/starspot.jpg");
+    /* background-color: rgb(48, 48, 48); */
+    background:#5f5cf5;
+    /* background-image: url("../../assets/images/starspot.jpg"); */
+    background-size: 100%;
     font-family: 'Anton', sans-serif;
     color: white;
 }
 footer, header, #topNavbar > .navMenuContainer {
-    background-color: black;
+    background-color: #ffff6698;
 }
 .link {
     color: white;
 }
 .MoreInfo {
-    background-color: #333;
+    background-color: rgb(124, 141, 47);
     border: none;
     outline: 0;
     display: inline-block;
@@ -43,7 +53,7 @@ footer, header, #topNavbar > .navMenuContainer {
     color: white;
 }
 .MoreInfo:hover{
-    background-color: dimgray;
+    background-color: rgba(255, 255, 0, 0.479);
 }
 
 footer {
@@ -61,11 +71,11 @@ footer > .footerColumn {
     color: white;
 }
 /* CSS for mobile Site */
-h3 {
+h1 {
     margin: 5%;
 }
 .navMenuItem {
-    border-color: white;
+    border-color: rgb(62, 84, 99);
     border-right-style: solid;
     border-bottom-style: solid;
 }
@@ -90,18 +100,18 @@ h3 {
 }
 .menuItemLink {
     display: block;
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 8px 16px;
     text-decoration: none;
 }
 .navMenuItem a:hover, .profileIcon a:hover  {
-    background-color: rgb(107, 107, 107);
+    background-color: yellow;
 }
 
 /* For Information Cards */
 .card {
-    background-color: gray;
+    background-color: #ffff66b4;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
     margin: auto;
@@ -126,10 +136,6 @@ h3 {
         display: flex;
         margin-bottom: 5%;
     }
-    header{
-        background-color:whitesmoke;
-        padding: 0;
-    }
     #topNavBar {
         padding: 0;
         margin: 0;
@@ -150,16 +156,16 @@ h3 {
     }
     .menuItemLink {
         display: block;
-        color: white;
+        color: rgb(62, 84, 99);
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
     }
     .navMenuItem a:hover, .profileIcon a:hover {
-        background-color: rgb(107, 107, 107);
+        background-color: yellow;
     }
 
-    h3 {
+    h1 {
         margin: 2.5%;
     }
 }
