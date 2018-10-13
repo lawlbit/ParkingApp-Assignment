@@ -6,6 +6,7 @@
     <title>Welcome to Spotted</title>
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
     <link rel="stylesheet" type="text/css" href="styles/loginStyles.css" />
+    <link rel="stylesheet" type="text/css" href="styles/registerStyles.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/apple-touch-icon.png">
@@ -19,13 +20,23 @@
     <!-- Meta stuff goes -->
 </head>
 <!-- No headers on this page as it assumes the user is not logged in yet! -->
+<header>
+    <div id="topNavbar">
+        <ul class="navMenuContainer">
+            <li class="navMenuItem"><a class="menuItemLink link" href="homeAnon.html">Home</a></li>
+            <li class="navMenuItem"><a class="menuItemLink link" href="search.html">Search</a></li>
+            <!-- <li class="profileIcon"><a class="menuItemLink link" href="index.html">Login</a></li> -->
+        </ul>
+    </div>
+</header>
+
 <body>
     <form>
         <div class="formContainer">
             <h1>Spotted <img src="../assets/images/favicon-16x16.png" alt="Logo"></h1>
 
-            <input type="email" class="email" name="email" value="email"/>
-            <input type="password"class="password" name="password" value="password"/>
+            <input type="email" class="email" name="email" value="email" />
+            <input type="password" class="password" name="password" value="password" />
             <!-- Doing it this way where the div is within the a tag allows for more customization of the button. -->
             <a href="home.html">
                 <div class="signIn">Sign In</div>
@@ -36,5 +47,17 @@
         </div>
     </form>
 </body>
+<footer>
+    <div class="footerColumn">
+        <ul id="additionalLinks">
+            <li><a href="help.html" class="link">Help</a></li>
+            <li><a href="https://www.google.com/maps" class="link">Google Maps</a></li>
+        </ul>
+    </div>
+    <div class="footerColumn" id="contactInfo">
+        <p>Created by: Ethan Chan</p>
+        <p>Contact Email: <a href="mailto:chaneh@mcmaser.ca">chaneh@mcmaster.ca</a>.</p>
+    </div>
+</footer>
 
 </html>

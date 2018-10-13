@@ -2,9 +2,9 @@
 body{ 
     width:100%; 
     text-align:center;
-    /* margin: 20px 0px 20px 0px;    */
 }
 header{
+    margin-top: 0;
     margin-bottom: 20px;
 }
   
@@ -24,7 +24,8 @@ h1{
     width:300px;
     margin: 0 auto 0 auto;
     padding:10px 0px 70px 0px;
-    border-bottom: #1e5375 4px solid; 
+    border-bottom: #1e5375 4px solid;
+    color: #000000;
 }
   
 .email, .tele, .submit{

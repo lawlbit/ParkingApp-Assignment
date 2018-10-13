@@ -1,0 +1,38 @@
+/* Fine tuning CSS for the search page. */
+/* Persistent CSS first */
+table {
+    border-spacing: 5% 5%;
+}
+table.center {
+    margin-left:auto; 
+    margin-right:auto;
+}
+.fieldsTable{
+    align-self: center;
+}
+.submit {
+   margin-bottom: 0;
+}
+  
+
+/* Mobile CSS */
+.formContainer{
+    background:white;
+    width:300px;
+    margin: 0 auto 0 auto;
+    padding:10px 0px 20px 0px;
+    border-bottom: #1e5375 4px solid;
+    color: #000000;
+}
+
+/* Desktop CSS */
+@media only screen and (min-width: 768px) {
+    .formContainer{
+        background:white;
+        width: 40%;
+        margin: 0 auto 0 auto;
+        padding:10px 0px 20px 0px;
+        border-bottom: #1e5375 4px solid;
+        color: #000000;
+    }
+}
