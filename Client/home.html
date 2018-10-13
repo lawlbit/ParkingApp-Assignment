@@ -1,6 +1,7 @@
 <!-- Home page for Spotted -->
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Spotted Home</title>
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
@@ -19,7 +20,7 @@
 <header>
     <div id="topNavbar">
         <ul class="navMenuContainer">
-            <li class="navMenuItem"><a class="menuItemLink link" href="home.html">Home</a></li>
+            <li class="navMenuItem"><a class="menuItemLink link active" href="home.html">Home</a></li>
             <li class="navMenuItem"><a class="menuItemLink link" href="search.html">Search</a></li>
             <li class="navMenuItem"><a class="menuItemLink link" href="occupied.html">Occupancy</a></li>
             <li class="navMenuItem"><a class="menuItemLink link" href="parkingManagement.html">Management</a></li>
@@ -29,72 +30,80 @@
 </header>
 
 <body>
-    <h1>Currently Occupied Parking Spots:</h1>
-    <div class="card-wrapper" id="occupiedQuick">
-        <div class="card">
-            <!-- This is a place holder image for a map location. -->
-            <img src="../assets/images/mapPlaceHolder.PNG" alt="map" style="width:100%">
-            <p class="location">Location: 1234 Imaginary Rd, Hamilton, Ontario</p>
-            <p class="rate">Rate/hr: $10</p>
-            <p class="time">Time Remaining: 2:30</p>
-            <div class="MoreInfo"><a href="parking.html">> More Details </a></div>
+    <div class="content-wrapper">
+        <h1>Currently Occupied Parking Spots:</h1>
+        <div class="card-wrapper" id="occupiedQuick">
+            <div class="card">
+                <!-- This is a place holder image for a map location. -->
+                <img src="../assets/images/parking.jpg" alt="parkingImage">
+                <p class="location">Location: 1234 Imaginary Rd, Hamilton, Ontario</p>
+                <p class="rate">Rate/hr: $10</p>
+                <p class="time">Time Remaining: 2:30</p>
+                <a href="parking.html">
+                    <div class="MoreInfo">> More Details</div>
+                </a>
+            </div>
+            <div class="card">
+                <!-- This is a place holder image for a map location. -->
+                <img src="../assets/images/parking.jpg" alt="parkingImage">
+                <p class="location">Location: 1234 Imaginary Rd, Hamilton, Ontario</p>
+                <p class="rate">Rate/hr: $10</p>
+                <p class="time">Time Remaining: 2:30</p>
+                <a href="parking.html">
+                    <div class="MoreInfo">> More Details</div>
+                </a>
+            </div>
+            <div class="card">
+                <!-- This is a place holder image for a map location. -->
+                <img src="../assets/images/parking.jpg" alt="parkingImage">
+                <p class="location">Location: 1234 Imaginary Rd, Hamilton, Ontario</p>
+                <p class="rate">Rate/hr: $10</p>
+                <p class="time">Time Remaining: 2:30</p>
+                <a href="parking.html">
+                    <div class="MoreInfo">> More Details</div>
+                </a>
+            </div>
         </div>
-        <div class="card">
-            <!-- This is a place holder image for a map location. -->
-            <img src="../assets/images/mapPlaceHolder.PNG" alt="map" style="width:100%">
-            <p class="location">Location: 1234 Imaginary Rd, Hamilton, Ontario</p>
-            <p class="rate">Rate/hr: $10</p>
-            <p class="time">Time Remaining: 2:30</p>
-            <div class="MoreInfo"><a href="parking.html">> More Details </a></div>
-        </div>
-        <div class="card">
-            <!-- This is a place holder image for a map location. -->
-            <img src="../assets/images/mapPlaceHolder.PNG" alt="map" style="width:100%">
-            <p class="location">Location: 1234 Imaginary Rd, Hamilton, Ontario</p>
-            <p class="rate">Rate/hr: $10</p>
-            <p class="time">Time Remaining: 2:30</p>
-            <div class="MoreInfo"><a href="parking.html">> More Details </a></div>
+        <hr>
+        <h1>My Tennents:</h1>
+        <div class="card-wrapper" id="myTennents">
+            <div class="card">
+                <!-- This is a place holder image for a map location. -->
+                <img src="../assets/images/parking.jpg" alt="parkingImage">
+                <p class="location">Location: 1234 Imaginary Rd, Hamilton, Ontario</p>
+                <p class="name">Name: Billy Bob</p>
+                <p class="number">Contact: 123-456-7890</p>
+                <p class="time">Time Remaining: 2:30</p>
+            </div>
+            <div class="card">
+                <!-- This is a place holder image for a map location. -->
+                <img src="../assets/images/parking.jpg" alt="parkingImage">
+                <p class="location">Location: 1234 Imaginary Rd, Hamilton, Ontario</p>
+                <p class="name">Name: Billy Bob</p>
+                <p class="number">Contact: 123-456-7890</p>
+                <p class="time">Time Remaining: 2:30</p>
+            </div>
+            <div class="card">
+                <!-- This is a place holder image for a map location. -->
+                <img src="../assets/images/parking.jpg" alt="parkingImage">
+                <p class="location">Location: 1234 Imaginary Rd, Hamilton, Ontario</p>
+                <p class="name">Name: Billy Bob</p>
+                <p class="number">Contact: 123-456-7890</p>
+                <p class="time">Time Remaining: 2:30</p>
+            </div>
         </div>
     </div>
-    <hr>
-    <h1>My Tennents:</h1>
-    <div class="card-wrapper" id="myTennents">
-        <div class="card">
-            <!-- This is a place holder image for a map location. -->
-            <img src="../assets/images/mapPlaceHolder.PNG" alt="map" style="width:100%">
-            <p class="location">Location: 1234 Imaginary Rd, Hamilton, Ontario</p>
-            <p class="name">Name: Billy Bob</p>
-            <p class="number">Contact: 123-456-7890</p>
-            <p class="time">Time Remaining: 2:30</p>
+    <footer>
+        <div class="footerColumn">
+            <ul id="additionalLinks">
+                <li><a href="help.html" class="link">Help</a></li>
+                <li><a href="https://www.google.com/maps" class="link">Google Maps</a></li>
+            </ul>
         </div>
-        <div class="card">
-            <!-- This is a place holder image for a map location. -->
-            <img src="../assets/images/mapPlaceHolder.PNG" alt="map" style="width:100%">
-            <p class="location">Location: 1234 Imaginary Rd, Hamilton, Ontario</p>
-            <p class="name">Name: Billy Bob</p>
-            <p class="number">Contact: 123-456-7890</p>
-            <p class="time">Time Remaining: 2:30</p>
+        <div class="footerColumn" id="contactInfo">
+            <p>Contact: <a href="mailto:chaneh@mcmaser.ca">chaneh@mcmaster.ca</a>.</p>
         </div>
-        <div class="card">
-            <!-- This is a place holder image for a map location. -->
-            <img src="../assets/images/mapPlaceHolder.PNG" alt="map" style="width:100%">
-            <p class="location">Location: 1234 Imaginary Rd, Hamilton, Ontario</p>
-            <p class="name">Name: Billy Bob</p>
-            <p class="number">Contact: 123-456-7890</p>
-            <p class="time">Time Remaining: 2:30</p>
-        </div>
-    </div>
+    </footer>
 </body>
-<footer>
-    <div class="footerColumn">
-        <ul id="additionalLinks">
-            <li><a href="help.html" class="link">Help</a></li>
-            <li><a href="https://www.google.com/maps" class="link">Google Maps</a></li>
-        </ul>
-    </div>
-    <div class="footerColumn" id="contactInfo">
-        <p>Contact: <a href="mailto:chaneh@mcmaser.ca">chaneh@mcmaster.ca</a>.</p>
-    </div>
-</footer>
 
 </html>
