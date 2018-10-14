@@ -1,6 +1,7 @@
 <!-- Home page for Spotted -->
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Spotted Home</title>
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
@@ -19,53 +20,62 @@
 <header>
     <div id="topNavbar">
         <ul class="navMenuContainer">
-            <li class="navMenuItem" ><a class="menuItemLink link active" href="homeAnon.html">Home</a></li>
-            <li class="navMenuItem" ><a class="menuItemLink link" href="searchAnon.html">Search</a></li>
+            <li class="navMenuItem"><a class="menuItemLink link active" href="homeAnon.html">Home</a></li>
+            <li class="navMenuItem"><a class="menuItemLink link" href="searchAnon.html">Search</a></li>
             <li class="profileIcon"><a class="menuItemLink link" href="index.html">Login</a></li>
         </ul>
     </div>
 </header>
 
 <body>
-    <h1>Parking Spots Near Me:</h1>
-    <div class="card-wrapper" id="occupiedQuick">
-        <div class="card">
-            <!-- This is a place holder image for a map location. -->
-            <img src="../assets/images/parking.jpg" alt="parkingImage" >
-            <p class="location">Location: 1234 Imaginary Rd, Hamilton, Ontario</p>
-            <p class="rate">Rate/hr: $10</p>
-            <p class="time">Time Remaining: 2:30</p>
-            <a href="parkingAnon.html"><div class="MoreInfo">> More Details</div> </a>
-        </div>
-        <div class="card">
-            <!-- This is a place holder image for a map location. -->
-            <img src="../assets/images/parking.jpg" alt="parkingImage" >
-            <p class="location">Location: 1234 Imaginary Rd, Hamilton, Ontario</p>
-            <p class="rate">Rate/hr: $10</p>
-            <p class="time">Time Remaining: 2:30</p>
-            <a href="parkingAnon.html"><div class="MoreInfo">> More Details</div> </a>
-        </div>
-        <div class="card">
-            <!-- This is a place holder image for a map location. -->
-            <img src="../assets/images/parking.jpg" alt="parkingImage" >
-            <p class="location">Location: 1234 Imaginary Rd, Hamilton, Ontario</p>
-            <p class="rate">Rate/hr: $10</p>
-            <p class="time">Time Remaining: 2:30</p>
-            <a href="parkingAnon.html"><div class="MoreInfo">> More Details</div> </a>
+    <div class="content-wrapper">
+        <h1>Parking Spots Near Me:</h1>
+        <div class="card-wrapper" id="occupiedQuick">
+            <div class="card">
+                <!-- This is a place holder image for a map location. -->
+                <img src="../assets/images/parking.jpg" alt="parkingImage">
+                <p class="location">Location: 1234 Imaginary Rd, Hamilton, Ontario</p>
+                <p class="rate">Rate/hr: $10</p>
+                <p class="time">Time Remaining: 2:30</p>
+                <a href="parkingAnon.html">
+                    <div class="MoreInfo"><i class="fas fa-question-circle"></i> More Details</div>
+                </a>
+            </div>
+            <div class="card">
+                <!-- This is a place holder image for a map location. -->
+                <img src="../assets/images/parking.jpg" alt="parkingImage">
+                <p class="location">Location: 1234 Imaginary Rd, Hamilton, Ontario</p>
+                <p class="rate">Rate/hr: $10</p>
+                <p class="time">Time Remaining: 2:30</p>
+                <a href="parkingAnon.html">
+                    <div class="MoreInfo"><i class="fas fa-question-circle"></i> More Details</div>
+                </a>
+            </div>
+            <div class="card">
+                <!-- This is a place holder image for a map location. -->
+                <img src="../assets/images/parking.jpg" alt="parkingImage">
+                <p class="location">Location: 1234 Imaginary Rd, Hamilton, Ontario</p>
+                <p class="rate">Rate/hr: $10</p>
+                <p class="time">Time Remaining: 2:30</p>
+                <a href="parkingAnon.html">
+                    <div class="MoreInfo"><i class="fas fa-question-circle"></i> More Details</div>
+                </a>
+            </div>
         </div>
     </div>
+    <footer>
+        <div class="footerColumn">
+            <ul id="additionalLinks">
+                <li><a href="help.html" class="link">Help</a></li>
+                <li><a href="https://www.google.com/maps" class="link">Google Maps</a></li>
+            </ul>
+        </div>
+        <div class="footerColumn" id="contactInfo">
+            <p>Created by: Ethan Chan</p>
+            <p>Contact Email: <a href="mailto:chaneh@mcmaser.ca">chaneh@mcmaster.ca</a>.</p>
+        </div>
+    </footer>
 </body>
-<footer>
-    <div class="footerColumn">
-        <ul id="additionalLinks">
-            <li><a href="help.html" class="link">Help</a></li>
-            <li><a href="https://www.google.com/maps" class="link">Google Maps</a></li>
-        </ul>
-    </div>
-    <div class="footerColumn" id="contactInfo">
-        <p>Created by: Ethan Chan</p>
-        <p>Contact Email: <a href="mailto:chaneh@mcmaser.ca">chaneh@mcmaster.ca</a>.</p>
-    </div>
-</footer>
+
 
 </html>

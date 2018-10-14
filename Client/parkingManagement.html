@@ -1,11 +1,68 @@
 <!-- My Spots Management Page -->
 <!DOCTYPE html>
 <html>
-<header>
 
+<head>
+    <title>Parking Management</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="styles/information.css" /> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="../assets/images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<header>
+    <div id="topNavbar">
+        <ul class="navMenuContainer">
+            <li class="navMenuItem"><a class="menuItemLink link" href="home.html">Home</a></li>
+            <li class="navMenuItem"><a class="menuItemLink link" href="search.html">Search</a></li>
+            <li class="navMenuItem"><a class="menuItemLink link" href="occupied.html">Occupancy</a></li>
+            <li class="navMenuItem"><a class="menuItemLink link active" href="parkingManagement.html">Management</a></li>
+            <li class="profileIcon"><a class="menuItemLink link" href="profile.html"><i class="fas fa-user-alt"></i></a></li>
+        </ul>
+    </div>
 </header>
+
 <body>
-    
+    <div class="content-wrapper">
+        <h1>My Parking Spots: </h1>
+        <div class="card-wrapper">
+            <div class="card">
+                <img src="../assets/images/parking.jpg" alt="parkingImage">
+                <p class="location">Location: 1234 Imaginary Rd, Hamilton, Ontario</p>
+                <p class="distance">Distance: 2km</p>
+                <p class="rate">Rate/hr: $10</p>
+                <p class="time">Time Remaining: 2:30</p>
+                <a href="parking.html">
+                    <div class="MoreInfo"><i class="fas fa-question-circle"></i> More Details</div>
+                </a>
+                <a href="#">
+                    <div class="MoreInfo"><i class="fas fa-edit"></i> Edit</div>
+                </a>
+                <a href="#">
+                    <div class="MoreInfo"><i class="far fa-trash-alt"></i> Delete</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footerColumn">
+            <ul id="additionalLinks">
+                <li><a href="help.html" class="link">Help</a></li>
+                <li><a href="https://www.google.com/maps" class="link">Google Maps</a></li>
+                <li><a href="index.html" class="link">Logout</a></li>
+            </ul>
+        </div>
+        <div class="footerColumn" id="contactInfo">
+            <p>Contact Email: <a href="mailto:chaneh@mcmaser.ca">chaneh@mcmaster.ca</a>.</p>
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -3,6 +3,14 @@ Additional stylesheets will be created
 in addition to this pending on screen.
 Designing for mobile first then the big screen. */
 
+/* Colour Palette 
+ #DCEDFF
+ #94B0DA
+ #8F91A2
+ #505A5B
+ #343F3E
+*/
+
 /* Persisten CSS */
 html, body, footer{
     padding: 0;
@@ -17,7 +25,7 @@ img{
 }
 /* For showing Active screen/page */
 .active {
-    background-color: yellow;
+    background-color: #DCEDFF;
 }
 /* For sticky Footer */
 html, body{
@@ -33,55 +41,48 @@ body{
 footer{
     flex-shrink: 0;
 }
-/* body{
-    min-height: calc(100vh - 70px);
-}
-footer{
-    height: 50;
-} */
-/*  */
 .navMenuItem {
     border-color: rgb(0, 0, 0);
-    border-right-style: solid;
+    /* border-right-style: solid; */
 }
 .profileIcon {
     border-color: rgb(62, 84, 99);
-    border-style: solid;
+    /* border-style: solid; */
 }
 hr {
     margin: 5%;
     color: rgb(38, 0, 255);
 }
 body {
-    background:#5f5cf5;
+    background:#505A5B;
     font-family: 'Anton', sans-serif;
-    color: white;
+    color: black;
     height: 100%;
 }
 footer, header, #topNavbar > .navMenuContainer {
-    background-color: #ffff6698;
+    background-color: #94B0DA;
 }
 .link {
-    color: white;
+    color: black;
 }
 .MoreInfo {
-    background-color: rgb(124, 141, 47);
+    background-color: #8F91A2;
     border: none;
     outline: 0;
     display: inline-block;
     padding: 2%;
-    color: white;
+    color: black;
     text-align: left;
     cursor: pointer;
     width: 75%;
+    margin: 2% 10% 2% 10%;
 }
 .MoreInfo a {
-    color: white;
+    color: black;
 }
 .MoreInfo:hover{
-    background-color: rgba(255, 255, 0, 0.479);
+    background-color: #DCEDFF;
 }
-
 footer {
     display: flex;
 }
@@ -91,10 +92,10 @@ footer > .footerColumn {
 }
 .footerColumn > ul {
     list-style-type: none;
-    color: white;
+    color: black;
 }
 .additionalLinks > li a {
-    color: white;
+    color: black;
 }
 /* CSS for mobile Site */
 h1 {
@@ -102,9 +103,7 @@ h1 {
 }
 .navMenuItem {
     border-color: rgb(62, 84, 99);
-    border-right-style: solid;
-    border-bottom-style: solid;
-    border-style: solid;
+    /* border-style: solid; */
 }
 /* For Navigation */
 #topNavBar {
@@ -133,12 +132,12 @@ h1 {
     text-decoration: none;
 }
 .navMenuItem a:hover, .profileIcon a:hover  {
-    background-color: yellow;
+    background-color: #DCEDFF;
 }
 
 /* For Information Cards */
 .card {
-    background-color: #ffff66b4;
+    background-color: #94B0DA;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
     margin: auto;
@@ -189,7 +188,7 @@ h1 {
         text-decoration: none;
     }
     .navMenuItem a:hover, .profileIcon a:hover {
-        background-color: yellow;
+    background-color: #DCEDFF;
     }
 
     h1 {
@@ -199,5 +198,10 @@ h1 {
         width: 40%;
         margin-left: 30%;
         margin-right: 30%;
+    }
+    .card img{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
     }
 }

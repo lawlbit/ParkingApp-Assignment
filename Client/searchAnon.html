@@ -29,68 +29,87 @@
 </header>
 
 <body>
-    <div class="formContainer">
-        <h1>Spot Search</h1>
-        <form method="POST" action="resultsAnon.html">
-            <table class="center">
-                <tr>
-                    <td>Distance (km): </td>
-                    <td> <input class="row-Entry" type="number" id="distance" name="distance" min="0" /></td>
-                </tr>
-                <tr>
-                        <td><hr></td>
-                        <td><hr></td>
-                </tr>
-                <tr>
-                    <td>Rate ($/hour): </td>
-                    <td><input class="row-Entry" type="number" id="rate" name="rate" min="0" /></td>
-                </tr>
-                <tr>
-                        <td><hr></td>
-                        <td><hr></td>
-                </tr>
-                <tr>
-                    <td>User Rating: </td>
-                    <td>
-                        <input type="radio" name="rating" value="1">1
-                        <input type="radio" name="rating" value="2">2
-                        <input type="radio" name="rating" value="3">3
-                        <input type="radio" name="rating" value="4">4
-                        <input type="radio" name="rating" value="5">5
-                    </td>
-                </tr>
-                <tr>
-                        <td><hr></td>
-                        <td><hr></td>
-                </tr>
-                <tr>
-                    <td>Shared: </td>
-                    <td><input type="radio" name="shared" value="yes">Yes <input type="radio" name="shared" value="no">No</td>
-                </tr>
-                <tr>
-                        <td><hr></td>
-                        <td><hr></td>
-                </tr>
-                <tr>
-                    <td>Availability: </td>
-                    <td><input type="datetime-local" name="start" id="startTime"></td>
-                </tr>
-            </table>
-            <input type="submit" class="submit" id="submit" />
-        </form>
+    <div class="content-wrapper">
+        <div class="formContainer">
+            <h1>Spot Search</h1>
+            <form method="POST" action="resultsAnon.html">
+                <table class="center">
+                    <tr>
+                        <td>Distance (km): </td>
+                        <td> <input class="row-Entry" type="number" id="distance" name="distance" min="0" /></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <hr>
+                        </td>
+                        <td>
+                            <hr>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Rate ($/hour): </td>
+                        <td><input class="row-Entry" type="number" id="rate" name="rate" min="0" /></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <hr>
+                        </td>
+                        <td>
+                            <hr>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>User Rating: </td>
+                        <td>
+                            <input type="radio" name="rating" value="1">1
+                            <input type="radio" name="rating" value="2">2
+                            <input type="radio" name="rating" value="3">3
+                            <input type="radio" name="rating" value="4">4
+                            <input type="radio" name="rating" value="5">5
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <hr>
+                        </td>
+                        <td>
+                            <hr>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Shared: </td>
+                        <td><input type="radio" name="shared" value="yes">Yes <input type="radio" name="shared" value="no">No</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <hr>
+                        </td>
+                        <td>
+                            <hr>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Availability: </td>
+                        <td><input type="datetime-local" name="start" id="startTime"></td>
+                    </tr>
+                </table>
+                <input type="submit" class="submit" id="submit" />
+            </form>
+        </div>
     </div>
+    <footer>
+        <div class="footerColumn">
+            <ul id="additionalLinks">
+                <li><a href="help.html" class="link">Help</a></li>
+                <li><a href="https://www.google.com/maps" class="link">Google Maps</a></li>
+            </ul>
+        </div>
+        <div class="footerColumn" id="contactInfo">
+            <p>Contact Email: <a href="mailto:chaneh@mcmaser.ca">chaneh@mcmaster.ca</a>.</p>
+        </div>
+    </footer>
 </body>
-<footer>
-    <div class="footerColumn">
-        <ul id="additionalLinks">
-            <li><a href="help.html" class="link">Help</a></li>
-            <li><a href="https://www.google.com/maps" class="link">Google Maps</a></li>
-        </ul>
-    </div>
-    <div class="footerColumn" id="contactInfo">
-        <p>Contact Email: <a href="mailto:chaneh@mcmaser.ca">chaneh@mcmaster.ca</a>.</p>
-    </div>
-</footer>
+
 
 
 </html>
