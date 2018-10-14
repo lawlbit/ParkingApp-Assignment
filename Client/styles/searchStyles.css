@@ -1,8 +1,6 @@
 /* Fine tuning CSS for the search page. */
 /* Persistent CSS first */
-table {
-    border-spacing: 5% 5%;
-}
+
 /* centering the table */
 table.center {
     margin-left:auto; 
