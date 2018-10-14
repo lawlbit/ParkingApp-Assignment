@@ -1,11 +1,134 @@
 <!-- Park lot info submission screen -->
 <!DOCTYPE html>
-<html>
-<header>
+<html lang="en">
 
-</header>
+<head>
+    <meta charset="UTF-8">
+    <title>Spotted Submission</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="styles/registerStyles.css" />
+    <link rel="stylesheet" type="text/css" href="styles/searchStyles.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="../assets/images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
 <body>
-    
+    <header>
+        <div id="topNavbar">
+            <ul class="navMenuContainer">
+                <li class="navMenuItem"><a class="menuItemLink link" href="home.html">Home</a></li>
+                <li class="navMenuItem"><a class="menuItemLink link" href="search.html">Search</a></li>
+                <li class="navMenuItem"><a class="menuItemLink link" href="occupied.html">Occupancy</a></li>
+                <li class="navMenuItem"><a class="menuItemLink link" href="parkingManagement.html">Management</a></li>
+                <li class="profileIcon"><a class="menuItemLink link" href="profile.html"><i class="fas fa-user-alt"></i></a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="content-wrapper">
+        <!-- Form container to better format the submission form. -->
+        <div class="formContainer">
+            <h1>Spot Submission</h1>
+            <form method="POST" action="parkingManagement.html">
+                <table class="center">
+                    <tr>
+                        <td>Name: </td>
+                        <td> <input class="row-Entry" type="text" id="name" name="name" /></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <hr>
+                        </td>
+                        <td>
+                            <hr>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Description: </td>
+                        <td> <input class="row-Entry" type="text" id="descipt" name="descipt" /></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <hr>
+                        </td>
+                        <td>
+                            <hr>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Longitude: </td>
+                        <td><input class="row-Entry" type="number" id="long" name="long" /></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <hr>
+                        </td>
+                        <td>
+                            <hr>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Latitude: </td>
+                        <td><input class="row-Entry" type="number" id="lat" name="lat" /></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <hr>
+                        </td>
+                        <td>
+                            <hr>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Rate ($/hour): </td>
+                        <td><input class="row-Entry" type="number" id="rate" name="rate" min="0" /></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <hr>
+                        </td>
+                        <td>
+                            <hr>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Shared: </td>
+                        <td><input type="radio" name="shared" value="yes">Yes <input type="radio" name="shared" value="no">No</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <hr>
+                        </td>
+                        <td>
+                            <hr>
+                        </td>
+                    </tr>
+                </table>
+                <input type="file" name="image" id="image">
+                <input type="submit" class="submit" id="submit" />
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="footerColumn">
+            <ul id="additionalLinks">
+                <li><a href="#" class="link">Help</a></li>
+                <li><a href="https://www.google.com/maps" class="link">Google Maps</a></li>
+                <li><a href="index.html" class="link">Logout</a></li>
+            </ul>
+        </div>
+        <div class="footerColumn" id="contactInfo">
+            <p>Contact Email: <a href="mailto:chaneh@mcmaser.ca">chaneh@mcmaster.ca</a>.</p>
+        </div>
+    </footer>
+
 </body>
 
 </html>

@@ -1,8 +1,9 @@
-<!-- Results Page for after Search -->
+<!-- Results Page for after Search for an anonymous user -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
     <title>Search Results</title>
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
@@ -16,17 +17,19 @@
     <meta name="theme-color" content="#ffffff">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<header>
-    <div id="topNavbar">
-        <ul class="navMenuContainer">
-            <li class="navMenuItem"><a class="menuItemLink link" href="homeAnon.html">Home</a></li>
-            <li class="navMenuItem"><a class="menuItemLink link" href="searchAnon.html">Search</a></li>
-            <li class="profileIcon"><a class="menuItemLink link" href="index.html">Login</a></li>
-        </ul>
-    </div>
-</header>
+
 
 <body>
+    <header>
+        <div id="topNavbar">
+            <ul class="navMenuContainer">
+                <li class="navMenuItem"><a class="menuItemLink link" href="homeAnon.html">Home</a></li>
+                <li class="navMenuItem"><a class="menuItemLink link" href="searchAnon.html">Search</a></li>
+                <li class="profileIcon"><a class="menuItemLink link" href="index.html">Login</a></li>
+            </ul>
+        </div>
+    </header>
+
     <div class="content-wrapper">
         <h1>Top Results: </h1>
         <div class="results-containers">
@@ -41,16 +44,10 @@
                     <a href="parkingAnon.html">
                         <div class="MoreInfo"><i class="fas fa-question-circle"></i> More Details</div>
                     </a>
-                </div>
-                <div class="card">
-                    <!-- This is a place holder image for a map location. -->
-                    <img src="../assets/images/parking.jpg" alt="parkingImage">
-                    <p class="location">Location: 1234 Imaginary Rd, Hamilton, Ontario</p>
-                    <p class="distance">Distance: 2km</p>
-                    <p class="rate">Rate/hr: $10</p>
-                    <p class="time">Time Remaining: 2:30</p>
-                    <a href="parkingAnon.html">
-                        <div class="MoreInfo"><i class="fas fa-question-circle"></i> More Details</div>
+                    <!-- Since this page is for non registered users instead of
+                         booking the actual page, the user is redirected to login. -->
+                    <a href="index.html">
+                        <div class="MoreInfo"><i class="fas fa-bookmark"></i> Book</div>
                     </a>
                 </div>
                 <div class="card">
@@ -62,6 +59,23 @@
                     <p class="time">Time Remaining: 2:30</p>
                     <a href="parkingAnon.html">
                         <div class="MoreInfo"><i class="fas fa-question-circle"></i> More Details</div>
+                    </a>
+                    <a href="index.html">
+                        <div class="MoreInfo"><i class="fas fa-bookmark"></i> Book</div>
+                    </a>
+                </div>
+                <div class="card">
+                    <!-- This is a place holder image for a map location. -->
+                    <img src="../assets/images/parking.jpg" alt="parkingImage">
+                    <p class="location">Location: 1234 Imaginary Rd, Hamilton, Ontario</p>
+                    <p class="distance">Distance: 2km</p>
+                    <p class="rate">Rate/hr: $10</p>
+                    <p class="time">Time Remaining: 2:30</p>
+                    <a href="parkingAnon.html">
+                        <div class="MoreInfo"><i class="fas fa-question-circle"></i> More Details</div>
+                    </a>
+                    <a href="index.html">
+                        <div class="MoreInfo"><i class="fas fa-bookmark"></i> Book</div>
                     </a>
                 </div>
             </div>
@@ -76,6 +90,9 @@
                     <a href="parkingAnon.html">
                         <div class="MoreInfo"><i class="fas fa-question-circle"></i> More Details</div>
                     </a>
+                    <a href="index.html">
+                        <div class="MoreInfo"><i class="fas fa-bookmark"></i> Book</div>
+                    </a>
                 </div>
                 <div class="card">
                     <!-- This is a place holder image for a map location. -->
@@ -86,6 +103,9 @@
                     <p class="time">Time Remaining: 2:30</p>
                     <a href="parkingAnon.html">
                         <div class="MoreInfo"><i class="fas fa-question-circle"></i> More Details</div>
+                    </a>
+                    <a href="index.html">
+                        <div class="MoreInfo"><i class="fas fa-bookmark"></i> Book</div>
                     </a>
                 </div>
                 <div class="card">
@@ -98,6 +118,9 @@
                     <a href="parkingAnon.html">
                         <div class="MoreInfo"><i class="fas fa-question-circle"></i> More Details</div>
                     </a>
+                    <a href="index.html">
+                        <div class="MoreInfo"><i class="fas fa-bookmark"></i> Book</div>
+                    </a>
                 </div>
             </div>
             <div class="card-wrapper" id="occupiedQuick">
@@ -111,16 +134,8 @@
                     <a href="parkingAnon.html">
                         <div class="MoreInfo"><i class="fas fa-question-circle"></i> More Details</div>
                     </a>
-                </div>
-                <div class="card">
-                    <!-- This is a place holder image for a map location. -->
-                    <img src="../assets/images/parking.jpg" alt="parkingImage">
-                    <p class="location">Location: 1234 Imaginary Rd, Hamilton, Ontario</p>
-                    <p class="distance">Distance: 2km</p>
-                    <p class="rate">Rate/hr: $10</p>
-                    <p class="time">Time Remaining: 2:30</p>
-                    <a href="parkingAnon.html">
-                        <div class="MoreInfo"><i class="fas fa-question-circle"></i> More Details</div>
+                    <a href="index.html">
+                        <div class="MoreInfo"><i class="fas fa-bookmark"></i> Book</div>
                     </a>
                 </div>
                 <div class="card">
@@ -132,6 +147,23 @@
                     <p class="time">Time Remaining: 2:30</p>
                     <a href="parkingAnon.html">
                         <div class="MoreInfo"><i class="fas fa-question-circle"></i> More Details</div>
+                    </a>
+                    <a href="index.html">
+                        <div class="MoreInfo"><i class="fas fa-bookmark"></i> Book</div>
+                    </a>
+                </div>
+                <div class="card">
+                    <!-- This is a place holder image for a map location. -->
+                    <img src="../assets/images/parking.jpg" alt="parkingImage">
+                    <p class="location">Location: 1234 Imaginary Rd, Hamilton, Ontario</p>
+                    <p class="distance">Distance: 2km</p>
+                    <p class="rate">Rate/hr: $10</p>
+                    <p class="time">Time Remaining: 2:30</p>
+                    <a href="parkingAnon.html">
+                        <div class="MoreInfo"><i class="fas fa-question-circle"></i> More Details</div>
+                    </a>
+                    <a href="index.html">
+                        <div class="MoreInfo"><i class="fas fa-bookmark"></i> Book</div>
                     </a>
                 </div>
             </div>
@@ -141,7 +173,7 @@
     <footer>
         <div class="footerColumn">
             <ul id="additionalLinks">
-                <li><a href="help.html" class="link">Help</a></li>
+                <li><a href="#" class="link">Help</a></li>
                 <li><a href="https://www.google.com/maps" class="link">Google Maps</a></li>
             </ul>
         </div>

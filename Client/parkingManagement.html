@@ -1,11 +1,13 @@
-<!-- My Spots Management Page -->
+<!-- My Spots Management Page 
+    This page is for users to manage  their owned parking spots
+-->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
     <title>Parking Management</title>
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
-    <!-- <link rel="stylesheet" type="text/css" href="styles/information.css" /> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/apple-touch-icon.png">
@@ -17,22 +19,31 @@
     <meta name="theme-color" content="#ffffff">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<header>
-    <div id="topNavbar">
-        <ul class="navMenuContainer">
-            <li class="navMenuItem"><a class="menuItemLink link" href="home.html">Home</a></li>
-            <li class="navMenuItem"><a class="menuItemLink link" href="search.html">Search</a></li>
-            <li class="navMenuItem"><a class="menuItemLink link" href="occupied.html">Occupancy</a></li>
-            <li class="navMenuItem"><a class="menuItemLink link active" href="parkingManagement.html">Management</a></li>
-            <li class="profileIcon"><a class="menuItemLink link" href="profile.html"><i class="fas fa-user-alt"></i></a></li>
-        </ul>
-    </div>
-</header>
 
 <body>
+    <header>
+        <div id="topNavbar">
+            <ul class="navMenuContainer">
+                <li class="navMenuItem"><a class="menuItemLink link" href="home.html">Home</a></li>
+                <li class="navMenuItem"><a class="menuItemLink link" href="search.html">Search</a></li>
+                <li class="navMenuItem"><a class="menuItemLink link" href="occupied.html">Occupancy</a></li>
+                <li class="navMenuItem"><a class="menuItemLink link active" href="parkingManagement.html">Management</a></li>
+                <li class="profileIcon"><a class="menuItemLink link" href="profile.html"><i class="fas fa-user-alt"></i></a></li>
+            </ul>
+        </div>
+    </header>
+
     <div class="content-wrapper">
         <h1>My Parking Spots: </h1>
+        <!-- <a href="submission.html"><div><i class="fas fa-plus-circle"></i></div></a> -->
         <div class="card-wrapper">
+            <!-- Out going link for adding addition parking spots, it links to the submission html page. -->
+            <div class="add-spot">
+                <a href="submission.html" class="link">
+                    <div class="MoreInfo"><i class="fas fa-plus-circle"></i> Add Parking Spot</div>
+                </a>
+            </div>
+            <!-- Card class/container to better organize presented data. -->
             <div class="card">
                 <img src="../assets/images/parking.jpg" alt="parkingImage">
                 <p class="location">Location: 1234 Imaginary Rd, Hamilton, Ontario</p>
@@ -54,7 +65,7 @@
     <footer>
         <div class="footerColumn">
             <ul id="additionalLinks">
-                <li><a href="help.html" class="link">Help</a></li>
+                <li><a href="#" class="link">Help</a></li>
                 <li><a href="https://www.google.com/maps" class="link">Google Maps</a></li>
                 <li><a href="index.html" class="link">Logout</a></li>
             </ul>

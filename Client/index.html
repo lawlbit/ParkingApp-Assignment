@@ -1,14 +1,16 @@
-<!-- Landing page for Spotted -->
+<!-- Landing page for Spotted, currently functions as a login page-->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
     <title>Welcome to Spotted</title>
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
     <link rel="stylesheet" type="text/css" href="styles/loginStyles.css" />
-    <!-- <link rel="stylesheet" type="text/css" href="styles/registerStyles.css" /> -->
+    <!-- fontawesome for using their icons, this is a free resource and was authorized by the prof on avenue -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
+    <!-- Links are for use of icos/ favicon for icon display -->
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon-16x16.png">
@@ -16,32 +18,44 @@
     <link rel="mask-icon" href="../assets/images/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Meta stuff goes -->
-</head>
-<!-- No headers on this page as it assumes the user is not logged in yet! -->
-<header style="margin-bottom: 5%;">
-    <div id="topNavbar">
-        <ul class="navMenuContainer">
-            <li class="navMenuItem"><a class="menuItemLink link" href="homeAnon.html">Home</a></li>
-            <li class="navMenuItem"><a class="menuItemLink link" href="searchAnon.html">Search</a></li>
-            <!-- <li class="profileIcon"><a class="menuItemLink link" href="index.html">Login</a></li> -->
-        </ul>
-    </div>
-</header>
 
+    <!-- For seeting the view width for mobile. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 <body>
+    <!-- Header acts as navigation. Since majority of the site assumes login access it has restricted access here. -->
+    <header>
+        <div id="topNavbar">
+            <ul class="navMenuContainer">
+                <!-- Going to an anonymous user home page -->
+                <li class="navMenuItem"><a class="menuItemLink link" href="homeAnon.html">Home</a></li>
+                <!-- going to an anonymous user search page -->
+                <li class="navMenuItem"><a class="menuItemLink link" href="searchAnon.html">Search</a></li>
+            </ul>
+        </div>
+    </header>
     <div class="content-wrapper">
+        <!-- This is the main login form -->
         <form>
             <div class="formContainer">
                 <h1>Spotted<br><img src="../assets/images/logo.jpg" alt="Logo" style="border-style:none; width:40%;"></h1>
+                <div class="label-container">
+                    <label for="email">Email</label>
+                </div>
 
                 <input type="email" class="email" name="email" value="email" />
+                <div class="label-container">
+                    <label for="password">Password</label>
+                </div>
+
                 <input type="password" class="password" name="password" value="password" />
-                <!-- Doing it this way where the div is within the a tag allows for more customization of the button. -->
+                
+                <!-- as it is currently a static page, signin just loads the logged in home screen -->
                 <a href="home.html">
                     <div class="signIn">Sign In</div>
                 </a>
+
+                <!-- Loads the register screen for users to sign up. -->
                 <a href="register.html">
                     <div class="signUp">Sign Up</div>
                 </a>
@@ -49,16 +63,16 @@
         </form>
     </div>
     <footer>
-            <div class="footerColumn">
-                <ul id="additionalLinks">
-                    <li><a href="help.html" class="link">Help</a></li>
-                    <li><a href="https://www.google.com/maps" class="link">Google Maps</a></li>
-                </ul>
-            </div>
-            <div class="footerColumn" id="contactInfo">
-                <p>Contact Email: <a href="mailto:chaneh@mcmaser.ca">chaneh@mcmaster.ca</a>.</p>
-            </div>
-        </footer>
+        <div class="footerColumn">
+            <ul id="additionalLinks">
+                <li><a href="#" class="link">Help</a></li>
+                <li><a href="https://www.google.com/maps" class="link">Google Maps</a></li>
+            </ul>
+        </div>
+        <div class="footerColumn" id="contactInfo">
+            <p>Contact Email: <a href="mailto:chaneh@mcmaser.ca">chaneh@mcmaster.ca</a>.</p>
+        </div>
+    </footer>
 </body>
 
 </html>

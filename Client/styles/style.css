@@ -26,6 +26,7 @@ img{
 /* For showing Active screen/page */
 .active {
     background-color: #DCEDFF;
+    font-weight: bold;
 }
 /* For sticky Footer */
 html, body{
@@ -41,18 +42,20 @@ body{
 footer{
     flex-shrink: 0;
 }
+
+/* Nav menu color and formating */
 .navMenuItem {
     border-color: rgb(0, 0, 0);
-    /* border-right-style: solid; */
 }
 .profileIcon {
     border-color: rgb(62, 84, 99);
-    /* border-style: solid; */
 }
 hr {
-    margin: 5%;
+    margin: 2%;
     color: rgb(38, 0, 255);
 }
+/* Interesting to note that background and 
+background-color in this case do the same thing */
 body {
     background:#505A5B;
     font-family: 'Anton', sans-serif;
@@ -65,6 +68,10 @@ footer, header, #topNavbar > .navMenuContainer {
 .link {
     color: black;
 }
+
+/* Poor naming here, moreInfor are the external links/buttons normally attached to cards
+The display inline-block allows for setting of width and height of an inline element
+*/
 .MoreInfo {
     background-color: #8F91A2;
     border: none;
@@ -103,14 +110,12 @@ h1 {
 }
 .navMenuItem {
     border-color: rgb(62, 84, 99);
-    /* border-style: solid; */
 }
 /* For Navigation */
 #topNavBar {
     padding: 0;
     margin: 0;
 }
-/* For Navigation */
 #topNavbar > .navMenuContainer {
     list-style-type: none;
     margin: 0;
@@ -136,7 +141,7 @@ h1 {
 }
 
 /* For Information Cards */
-.card {
+.card, .add-spot {
     background-color: #94B0DA;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
@@ -158,6 +163,21 @@ h1 {
         flex: 33.33%;
         padding: 5px;
     }
+    .add-spot{
+        background-color: #94B0DA;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 300px;
+        min-height: 100%;
+        margin: auto;
+        text-align: left;
+        padding: 2%;
+        margin-bottom: 5%;
+        margin-top: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+    }
     .card-wrapper {
         display: flex;
         margin-bottom: 5%;
@@ -173,7 +193,7 @@ h1 {
         padding: 0;
         overflow: hidden;
     }
-    
+    /* for Arranging nav bar. */
     .navMenuItem {
         float: left;
     }
@@ -190,7 +210,7 @@ h1 {
     .navMenuItem a:hover, .profileIcon a:hover {
     background-color: #DCEDFF;
     }
-
+    /* Using percentages to keep dynamic */
     h1 {
         margin: 2.5%;
     }

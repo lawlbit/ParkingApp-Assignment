@@ -1,8 +1,10 @@
 <!-- Home page for Spotted -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <!-- Setting the charset, this must go first or browswer will use default -->
+    <meta charset="UTF-8">
     <title>Spotted Home</title>
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
@@ -15,24 +17,30 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Meta stuff goes -->
 </head>
-<header>
-    <div id="topNavbar">
-        <ul class="navMenuContainer">
-            <li class="navMenuItem"><a class="menuItemLink link active" href="home.html">Home</a></li>
-            <li class="navMenuItem"><a class="menuItemLink link" href="search.html">Search</a></li>
-            <li class="navMenuItem"><a class="menuItemLink link" href="occupied.html">Occupancy</a></li>
-            <li class="navMenuItem"><a class="menuItemLink link" href="parkingManagement.html">Management</a></li>
-            <li class="profileIcon"><a class="menuItemLink link" href="profile.html"><i class="fas fa-user-alt"></i></a></li>
-        </ul>
-    </div>
-</header>
 
 <body>
+    <header>
+        <!-- The header is where the navigation is located, as there is a javascript restriction this this the cleanest place to put it. -->
+        <div id="topNavbar">
+            <ul class="navMenuContainer">
+                <!-- Currently links just go out to static pages. -->
+                <li class="navMenuItem"><a class="menuItemLink link active" href="home.html">Home</a></li>
+                <li class="navMenuItem"><a class="menuItemLink link" href="search.html">Search</a></li>
+                <li class="navMenuItem"><a class="menuItemLink link" href="occupied.html">Occupancy</a></li>
+                <li class="navMenuItem"><a class="menuItemLink link" href="parkingManagement.html">Management</a></li>
+                <li class="profileIcon"><a class="menuItemLink link" href="profile.html"><i class="fas fa-user-alt"></i></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Main body of the page content, the home screen is designed to show -->
     <div class="content-wrapper">
+        <!-- First segment should be spots user is currently using -->
         <h1>Currently Occupied Parking Spots:</h1>
         <div class="card-wrapper" id="occupiedQuick">
+            <!-- All infromation is summarized in the form of cards. 
+                This should allow for easier readability especially when going cross platform into mobile. -->
             <div class="card">
                 <!-- This is a place holder image for a map location. -->
                 <img src="../assets/images/parking.jpg" alt="parkingImage">
@@ -40,6 +48,7 @@
                 <p class="rate">Rate/hr: $10</p>
                 <p class="time">Time Remaining: 2:30</p>
                 <a href="parking.html">
+                    <!-- For gong to see addition details for the spot -->
                     <div class="MoreInfo"><i class="fas fa-question-circle"></i> More Details</div>
                 </a>
             </div>
@@ -64,7 +73,9 @@
                 </a>
             </div>
         </div>
+        <!-- Dividing line to visually seperate the sections. -->
         <hr>
+        <!-- Second segment is for user owned parking spots being loaned out currently -->
         <h1>My Tennents:</h1>
         <div class="card-wrapper" id="myTennents">
             <div class="card">
@@ -94,9 +105,11 @@
         </div>
     </div>
     <footer>
+        <!-- The footer for the page, help link is currently
+             broken but it should host a logout button as well a link to google maps -->
         <div class="footerColumn">
             <ul id="additionalLinks">
-                <li><a href="help.html" class="link">Help</a></li>
+                <li><a href="#" class="link">Help</a></li>
                 <li><a href="https://www.google.com/maps" class="link">Google Maps</a></li>
                 <li><a href="index.html" class="link">Logout</a></li>
             </ul>

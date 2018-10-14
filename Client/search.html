@@ -1,8 +1,9 @@
-<!-- Search Page -->
+<!-- Search Page for a logged in user-->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
     <title>Spotted Search</title>
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
     <link rel="stylesheet" type="text/css" href="styles/registerStyles.css" />
@@ -18,19 +19,20 @@
     <meta name="theme-color" content="#ffffff">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<header>
-    <div id="topNavbar">
-        <ul class="navMenuContainer">
-            <li class="navMenuItem"><a class="menuItemLink link" href="home.html">Home</a></li>
-            <li class="navMenuItem"><a class="menuItemLink link active" href="search.html">Search</a></li>
-            <li class="navMenuItem"><a class="menuItemLink link" href="occupied.html">Occupancy</a></li>
-            <li class="navMenuItem"><a class="menuItemLink link" href="parkingManagement.html">Management</a></li>
-            <li class="profileIcon"><a class="menuItemLink link" href="profile.html"><i class="fas fa-user-alt"></i></a></li>
-        </ul>
-    </div>
-</header>
+
 
 <body>
+    <header>
+        <div id="topNavbar">
+            <ul class="navMenuContainer">
+                <li class="navMenuItem"><a class="menuItemLink link" href="home.html">Home</a></li>
+                <li class="navMenuItem"><a class="menuItemLink link active" href="search.html">Search</a></li>
+                <li class="navMenuItem"><a class="menuItemLink link" href="occupied.html">Occupancy</a></li>
+                <li class="navMenuItem"><a class="menuItemLink link" href="parkingManagement.html">Management</a></li>
+                <li class="profileIcon"><a class="menuItemLink link" href="profile.html"><i class="fas fa-user-alt"></i></a></li>
+            </ul>
+        </div>
+    </header>
     <div class="content-wrapper">
         <div class="formContainer">
             <h1>Spot Search</h1>
@@ -61,6 +63,8 @@
                         </td>
                     </tr>
                     <tr>
+                        <!-- Using radio buttons forces the user to choose one of the following. using the same name keeps
+                             them all linked togther/related -->
                         <td>User Rating: </td>
                         <td>
                             <input type="radio" name="rating" value="1">1
@@ -102,7 +106,7 @@
     <footer>
         <div class="footerColumn">
             <ul id="additionalLinks">
-                <li><a href="help.html" class="link">Help</a></li>
+                <li><a href="#" class="link">Help</a></li>
                 <li><a href="https://www.google.com/maps" class="link">Google Maps</a></li>
                 <li><a href="index.html" class="link">Logout</a></li>
             </ul>

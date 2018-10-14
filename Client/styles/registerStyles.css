@@ -1,4 +1,6 @@
 /* This style sheet pertains to specific styles and designs for the login page */
+
+/* Making the body take up display width */
 body{ 
     width:100%; 
     text-align:center;
@@ -7,11 +9,10 @@ header{
     margin-top: 0;
     margin-bottom: 20px;
 }
-  
+/* Setting up font size and getting rid of underlines. */
 p{
     font-size:12px;
     text-decoration: none;
-    color:#ffffff;
 }
   
 h1{
@@ -23,28 +24,32 @@ h1{
     background:white;
     width:300px;
     margin: 0 auto 0 auto;
-    padding:10px 0px 70px 0px;
+    padding:10px 0px 40px 0px;
     border-bottom: #1e5375 4px solid;
     color: #000000;
+    /* text-align: left */
+}
+.label-container{
+    text-align: left;
+    margin-left: 5%;
+    margin-top: 10px; 
 }
   
-.email, .tele, .submit{
+.email, .name, .tele, .submit, .password{
     background:#ecf0f1;
     border: #ccc 1px solid;
     border-bottom: #ccc 2px solid;
     padding: 8px;
     width:250px;
     color:#AAAAAA;
-    margin-top:10px;
     margin-bottom: 10px;
     font-size:1em;
 }
-
 .submit {
+    margin-top: 5%;
     background: #3498db;
     color: white;
 }
-  
 .password{
     background:#ecf0f1;
     border: #ccc 1px solid;
@@ -68,7 +73,7 @@ h1{
     font-weight:800;
     font-size:0.8em;
 }
-  
+/* Setting up hover as signifiers, only works on desktop */
 .signIn:hover{
     background:rgb(44, 103, 192); 
 }

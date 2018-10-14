@@ -1,8 +1,9 @@
 <!-- Parking lot info screen -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
     <title>Parking Info</title>
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
     <link rel="stylesheet" type="text/css" href="styles/information.css" />
@@ -17,32 +18,47 @@
     <meta name="theme-color" content="#ffffff">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<header>
-    <div id="topNavbar">
-        <ul class="navMenuContainer">
-            <li class="navMenuItem"><a class="menuItemLink link" href="home.html">Home</a></li>
-            <li class="navMenuItem"><a class="menuItemLink link" href="search.html">Search</a></li>
-            <li class="navMenuItem"><a class="menuItemLink link" href="occupied.html">Occupancy</a></li>
-            <li class="navMenuItem"><a class="menuItemLink link" href="parkingManagement.html">Management</a></li>
-            <li class="profileIcon"><a class="menuItemLink link" href="profile.html"><i class="fas fa-user-alt"></i></a></li>
-        </ul>
-    </div>
-</header>
+
 
 <body>
+    <!-- Navigation Header bar -->
+    <header>
+        <div id="topNavbar">
+            <ul class="navMenuContainer">
+                <li class="navMenuItem"><a class="menuItemLink link" href="home.html">Home</a></li>
+                <li class="navMenuItem"><a class="menuItemLink link" href="search.html">Search</a></li>
+                <li class="navMenuItem"><a class="menuItemLink link" href="occupied.html">Occupancy</a></li>
+                <li class="navMenuItem"><a class="menuItemLink link" href="parkingManagement.html">Management</a></li>
+                <li class="profileIcon"><a class="menuItemLink link" href="profile.html"><i class="fas fa-user-alt"></i></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
     <div class="content-wrapper">
         <div class="info-container">
             <h2>Location Information</h2>
+            <!-- Place holder for map element  -->
             <img src="../assets/images/mapPlaceHolder.PNG" alt="map">
             <div class="content">
+                <!-- Table for displaying parking spot information -->
                 <table>
                     <tr>
                         <td>Rating: </td>
                         <td>5/5 </td>
                     </tr>
                     <tr>
-                        <td>Location: </td>
+                        <td>Address: </td>
                         <td>1234 Imaginary Rd, Hamilton, Ontario</td>
+                    </tr>
+                    <tr>
+                        <td>Location: </td>
+                        <td>Longitute: x, Latitude: y</td>
+                    </tr>
+                    <tr>
+                        <td>Description: </td>
+                        <td> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In efficitur sodales condimentum.
+                            Morbi.</td>
                     </tr>
                     <tr>
                         <td>Rate/Hour: </td>
@@ -59,8 +75,10 @@
                 </table>
             </div>
             <hr>
+            <!-- User reviews -->
             <h2>Reviews/Comments</h1>
                 <div class="review-card-container">
+                    <!-- Similar to the original card, except for housing reviews, same idea -->
                     <div class="review-card">
                         <p>Random Dude</p>
                         <p>Rating: 5/5</p>
@@ -98,7 +116,7 @@
     <footer>
         <div class="footerColumn">
             <ul id="additionalLinks">
-                <li><a href="help.html" class="link">Help</a></li>
+                <li><a href="#" class="link">Help</a></li>
                 <li><a href="https://www.google.com/maps" class="link">Google Maps</a></li>
                 <li><a href="index.html" class="link">Logout</a></li>
             </ul>

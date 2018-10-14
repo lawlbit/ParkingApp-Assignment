@@ -3,6 +3,7 @@
 table {
     border-spacing: 5% 5%;
 }
+/* centering the table */
 table.center {
     margin-left:auto; 
     margin-right:auto;
@@ -13,7 +14,6 @@ table.center {
 .submit {
    margin-bottom: 0;
 }
-  
 
 /* Mobile CSS */
 .formContainer{

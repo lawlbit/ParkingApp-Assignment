@@ -1,8 +1,9 @@
 <!-- User Registration Form for Account-->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
     <title>Create Account</title>
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
     <link rel="stylesheet" type="text/css" href="styles/registerStyles.css" />
@@ -17,39 +18,60 @@
     <meta name="theme-color" content="#ffffff">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<header>
-    <div id="topNavbar">
-        <ul class="navMenuContainer">
-            <li class="navMenuItem"><a class="menuItemLink link" href="homeAnon.html">Home</a></li>
-            <li class="navMenuItem"><a class="menuItemLink link" href="search.html">Search</a></li>
-            <!-- <li class="profileIcon"><a class="menuItemLink link" href="register.html"><i class="fas fa-user-alt"></i></a></li> -->
-        </ul>
-    </div>
-</header>
 
 <body>
-    <div class="formContainer">
-        <h1>Registration Form</h1>
-        <form method="POST" action="home.html">
-            <input type="email" class="email" name="email" value="email" id="email" />
-            <input type="password" class="password" name="password" value="password" id="pw" />
-            <input type="tel" class="tele" name="tele" id="tel" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
-            <input type="submit" class="submit" id="submit" />
-        </form>
+    <header>
+        <div id="topNavbar">
+            <ul class="navMenuContainer">
+                <li class="navMenuItem"><a class="menuItemLink link" href="homeAnon.html">Home</a></li>
+                <li class="navMenuItem"><a class="menuItemLink link" href="search.html">Search</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Main content container -->
+    <div class="content-wrapper">
+        <!-- For Containing the form -->
+        <div class="formContainer">
+            <h1>Registration Form</h1>
+            <form method="POST" action="home.html">
+                <!-- Label Container to help with organizing the label -->
+                <div class="label-container">
+                    <label for="name">Name</label>
+                </div>
+                <input type="text" class="name" name="name" value="Name" id="userName" />
+
+                <div class="label-container">
+                    <label for="email">Email</label>
+                </div>
+                <input type="email" class="email" name="email" value="email" id="email" />
+
+                <div class="label-container">
+                    <label for="password">Password</label>
+                </div>
+                <input type="password" class="password" name="password" value="password" id="pw" />
+
+                <div class="label-container">
+                    <label for="tele">Phone Number</label>
+                </div>
+                <input type="tel" class="tele" name="tele" id="tel" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
+                <!-- Once Account is created user should be brought straight to home screen. -->
+                <input type="submit" class="submit" id="submit" value="Create Account" />
+            </form>
+        </div>
+
     </div>
+    <footer>
+        <div class="footerColumn">
+            <ul id="additionalLinks">
+                <li><a href="#" class="link">Help</a></li>
+                <li><a href="https://www.google.com/maps" class="link">Google Maps</a></li>
+            </ul>
+        </div>
+        <div class="footerColumn" id="contactInfo">
+            <p>Created by: Ethan Chan</p>
+            <p>Contact Email: <a href="mailto:chaneh@mcmaser.ca">chaneh@mcmaster.ca</a>.</p>
+        </div>
+    </footer>
 </body>
-<footer>
-    <div class="footerColumn">
-        <ul id="additionalLinks">
-            <li><a href="help.html" class="link">Help</a></li>
-            <li><a href="https://www.google.com/maps" class="link">Google Maps</a></li>
-        </ul>
-    </div>
-    <div class="footerColumn" id="contactInfo">
-        <p>Created by: Ethan Chan</p>
-        <p>Contact Email: <a href="mailto:chaneh@mcmaser.ca">chaneh@mcmaster.ca</a>.</p>
-    </div>
-</footer>
-
-
 </html>

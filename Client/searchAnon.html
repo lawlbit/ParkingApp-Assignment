@@ -1,8 +1,11 @@
-<!-- Search Page -->
+<!-- Search Page for an anonymous user
+    Generally the same elements of the actual search page with different nav bar set up as well as links.
+-->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
     <title>Spotted Search</title>
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
     <link rel="stylesheet" type="text/css" href="styles/registerStyles.css" />
@@ -18,17 +21,18 @@
     <meta name="theme-color" content="#ffffff">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<header>
-    <div id="topNavbar">
-        <ul class="navMenuContainer">
-            <li class="navMenuItem"><a class="menuItemLink link" href="homeAnon.html">Home</a></li>
-            <li class="navMenuItem"><a class="menuItemLink link active" href="searchAnon.html">Search</a></li>
-            <li class="profileIcon"><a class="menuItemLink link" href="index.html">Login</a></li>
-        </ul>
-    </div>
-</header>
+
 
 <body>
+    <header>
+        <div id="topNavbar">
+            <ul class="navMenuContainer">
+                <li class="navMenuItem"><a class="menuItemLink link" href="homeAnon.html">Home</a></li>
+                <li class="navMenuItem"><a class="menuItemLink link active" href="searchAnon.html">Search</a></li>
+                <li class="profileIcon"><a class="menuItemLink link" href="index.html">Login</a></li>
+            </ul>
+        </div>
+    </header>
     <div class="content-wrapper">
         <div class="formContainer">
             <h1>Spot Search</h1>
@@ -100,7 +104,7 @@
     <footer>
         <div class="footerColumn">
             <ul id="additionalLinks">
-                <li><a href="help.html" class="link">Help</a></li>
+                <li><a href="#" class="link">Help</a></li>
                 <li><a href="https://www.google.com/maps" class="link">Google Maps</a></li>
             </ul>
         </div>
@@ -109,7 +113,4 @@
         </div>
     </footer>
 </body>
-
-
-
 </html>
