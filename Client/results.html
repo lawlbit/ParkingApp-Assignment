@@ -35,6 +35,11 @@
     <div class="content-wrapper">
         <h1>Top Results: </h1>
         <div class="results-containers">
+            <!-- For loading all markers on map of search results. -->
+            <div class="map" id="map"></div>
+            <script src="./scripts/mapGeneral.js"></script>
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqWJWcMzxgzc6pcLv6Q7JXXi3FVDOg_bg&callback=initMap">
+            </script>
             <div class="card-wrapper">
                 <!-- Card is for organizing the quick summary of inofrmation for each parking spot found -->
                 <div class="card">

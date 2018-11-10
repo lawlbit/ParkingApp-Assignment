@@ -34,7 +34,11 @@
     <div class="content-wrapper">
         <div class="info-container">
             <h2>Location Information</h2>
-            <img src="../assets/images/mapPlaceHolder.PNG" alt="map">
+            <div class="map" id="map"></div>
+            <!-- Script importing for map loading -->
+            <script src="./scripts/mapsSpecific.js"></script>
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqWJWcMzxgzc6pcLv6Q7JXXi3FVDOg_bg&callback=initMap">
+            </script>
             <div class="content">
                 <table>
                     <tr>

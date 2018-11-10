@@ -7,6 +7,6 @@ function getLocation() {
         console.log("Browser doesn't support geolocation API.")
     }
 }
-// function showPosition(position) {
-//     document.getElementById("demo").innerHTML = "Latitude: " + position.coords.latitude +"<br>Longitude: " + position.coords.longitude;
-// }
+function showPosition(position) {
+    // document.getElementById("demo").innerHTML = "Latitude: " + position.coords.latitude +"<br>Longitude: " + position.coords.longitude;
+}

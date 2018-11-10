@@ -39,7 +39,12 @@
         <div class="info-container">
             <h2>Location Information</h2>
             <!-- Place holder for map element  -->
-            <img src="../assets/images/mapPlaceHolder.PNG" alt="map">
+            <div class="map" id="map"></div>
+            <!-- Script importing for map loading -->
+            <script src="./scripts/mapsSpecific.js"></script>
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqWJWcMzxgzc6pcLv6Q7JXXi3FVDOg_bg&callback=initMap">
+            </script>
+            <!-- <img src="../assets/images/mapPlaceHolder.PNG" alt="map"> -->
             <div class="content">
                 <!-- Table for displaying parking spot information -->
                 <table>
@@ -77,40 +82,40 @@
             <hr>
             <!-- User reviews -->
             <h2>Reviews/Comments</h2>
-                <div class="review-card-container">
-                    <!-- Similar to the original card, except for housing reviews, same idea -->
-                    <div class="review-card">
-                        <p>Random Dude</p>
-                        <p>Rating: 5/5</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In efficitur sodales condimentum.
-                            Morbi
-                            vitae elit vel ipsum fermentum vehicula non a quam. Proin elit sapien, malesuada et nulla
-                            et,
-                            imperdiet sodales turpis. Nunc at feugiat risus, vitae consectetur dui. </p>
-                    </div>
-                    <div class="review-card">
-                        <p>Random Dude</p>
-                        <p>Rating: 5/5</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In efficitur sodales condimentum.
-                            Morbi
-                            vitae elit vel ipsum fermentum vehicula non a quam. Proin elit sapien, malesuada et nulla
-                            et,
-                            imperdiet sodales turpis. Nunc at feugiat risus, vitae consectetur dui. </p>
-                    </div>
-                    <div class="review-card">
-                        <p>Random Dude</p>
-                        <p>Rating: 5/5</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In efficitur sodales condimentum.
-                            Morbi
-                            vitae elit vel ipsum fermentum vehicula non a quam. Proin elit sapien, malesuada et nulla
-                            et,
-                            imperdiet sodales turpis. Nunc at feugiat risus, vitae consectetur dui. </p>
-                    </div>
-                    <!-- Currently a broken link due to not having access to js. -->
-                    <a href="#">
-                        <div class="button">Leave Review</div>
-                    </a>
+            <div class="review-card-container">
+                <!-- Similar to the original card, except for housing reviews, same idea -->
+                <div class="review-card">
+                    <p>Random Dude</p>
+                    <p>Rating: 5/5</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In efficitur sodales condimentum.
+                        Morbi
+                        vitae elit vel ipsum fermentum vehicula non a quam. Proin elit sapien, malesuada et nulla
+                        et,
+                        imperdiet sodales turpis. Nunc at feugiat risus, vitae consectetur dui. </p>
                 </div>
+                <div class="review-card">
+                    <p>Random Dude</p>
+                    <p>Rating: 5/5</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In efficitur sodales condimentum.
+                        Morbi
+                        vitae elit vel ipsum fermentum vehicula non a quam. Proin elit sapien, malesuada et nulla
+                        et,
+                        imperdiet sodales turpis. Nunc at feugiat risus, vitae consectetur dui. </p>
+                </div>
+                <div class="review-card">
+                    <p>Random Dude</p>
+                    <p>Rating: 5/5</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In efficitur sodales condimentum.
+                        Morbi
+                        vitae elit vel ipsum fermentum vehicula non a quam. Proin elit sapien, malesuada et nulla
+                        et,
+                        imperdiet sodales turpis. Nunc at feugiat risus, vitae consectetur dui. </p>
+                </div>
+                <!-- Currently a broken link due to not having access to js. -->
+                <a href="#">
+                    <div class="button">Leave Review</div>
+                </a>
+            </div>
         </div>
     </div>
     <footer>
