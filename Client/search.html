@@ -40,7 +40,7 @@
                 <table class="center">
                     <tr>
                         <td>Longitude: </td>
-                        <td> <input class="row-Entry" type="number" id="long" name="long" min="0" /></td>
+                        <td> <input class="row-Entry" type="number" id="long" name="long" step="any"/></td>
                     </tr>
                     <tr>
                         <td>
@@ -52,7 +52,7 @@
                     </tr>
                     <tr>
                         <td>Latitude: </td>
-                        <td> <input class="row-Entry" type="number" id="lat" name="lat" min="0" /></td>
+                        <td> <input class="row-Entry" type="number" id="lat" name="lat"  step="any"/></td>
                     </tr>
                     <tr>
                         <td>
@@ -111,7 +111,9 @@
                         <td><input type="datetime-local" name="start" id="startTime"></td>
                     </tr>
                 </table>
-                <input type="submit" class="submit" id="submit" />
+                <input type="submit" class="sub" id="submit" />
+                <script src="./scripts/geolocation.js"></script>
+                <input type="button" class="lucky" value="Find Near Me" onclick="getLocation()"/>
             </form>
         </div>
     </div>
