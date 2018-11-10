@@ -3,7 +3,7 @@ function validateForm() {
     var email = document.forms["registerForm"]["femail"].value;
     var password = document.forms["registerForm"]["fpassword"].value;
     var telephone = document.forms["registerForm"]["ftele"].value;
-    console.log(name + " "+ email + " " + password + " "+ telephone);
+    // console.log(name + " "+ email + " " + password + " "+ telephone);
     if (!validateEmpty(name, email, password, telephone)) return false;
     if (!validateEmail(email)) return false;
     if (!validatePassword(password)) return false;
