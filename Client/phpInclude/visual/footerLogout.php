@@ -1,0 +1,1 @@
+<li><a href="phpInclude/functional/logout.php" class="link">Logout</a></li>
