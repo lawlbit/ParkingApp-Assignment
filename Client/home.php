@@ -2,7 +2,7 @@
     // This is the header php script element for redirectiing.
     session_start();
     if (!isset($_SESSION['loginID'])){
-        header("Location: http://{$_SERVER['HTTP_HOST']}/AssignmentPHP/");
+        header("Location: http://{$_SERVER['HTTP_HOST']}/AssignmentPHP/index.php");
     }
 ?>
 <!DOCTYPE html>

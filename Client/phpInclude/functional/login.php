@@ -28,7 +28,7 @@ if (isset($_POST['email'])){
         header("Location: http://{$_SERVER['HTTP_HOST']}/AssignmentPHP/home.php");
     } else {
         //Login failed
-        header("Location: http://{$_SERVER['HTTP_HOST']}/AssignmentPHP/");
+        header("Location: http://{$_SERVER['HTTP_HOST']}/AssignmentPHP/index.php");
     }
 
 }
