@@ -25,10 +25,10 @@ if (isset($_POST['email'])){
         // Set the Session ID for later use in home page.
         $_SESSION['loginID'] = $rows[0]['ID'];
         // Redirect to home page.
-        header("Location: http://{$_SERVER['HTTP_HOST']}/home.php");
+        header("Location: https://{$_SERVER['HTTP_HOST']}/home.php");
     } else {
         //Login failed
-        header("Location: http://{$_SERVER['HTTP_HOST']}/index.php");
+        header("Location: https://{$_SERVER['HTTP_HOST']}/index.php");
     }
 
 }
