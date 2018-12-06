@@ -1,13 +1,14 @@
-create table Users (
+use 4ww3;
+create table users (
 	ID INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
 	Name text NOT NULL,
 	Email text NOT NULL,
 	PhoneNumber text NOT NULL,
 	salt VARCHAR(64),
-	passwordhash VARCHAR(64)
+	passwordhash VARCHAR(64),
 	CONSTRAINT uid PRIMARY KEY (ID)
 );
-create table Parkings (
+create table parkings (
 	ID INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
 	OwnerID INT(11) UNSIGNED NOT NULL,
 	OccupantID INT(11) UNSIGNED,
@@ -16,22 +17,18 @@ create table Parkings (
 	Location text NOT NULL,
 	Longitude DECIMAL(10, 6) NOT NULL,
 	Latitude DECIMAL(10, 6) NOT NULL,
-	Imageurl TEXT,	
+	Imageurl TEXT,
 	CONSTRAINT pid PRIMARY KEY (ID),
-	CONSTRAINT FOREIGN KEY (OwnerID) REFERENCES Users(ID) ON DELETE CASCADE,
-	CONSTRAINT FOREIGN KEY (OccupantID) REFERENCES Users(ID)
+	FOREIGN KEY (OwnerID) REFERENCES users(ID) ON DELETE CASCADE,
+	FOREIGN KEY (OccupantID) REFERENCES users(ID)
 );
-create table Reviews (
+create table reviews (
 	ID INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
 	ReviewerID INT(11) UNSIGNED NOT NULL,
 	P_id INT(11) UNSIGNED NOT NULL,
 	Rating INT(11) UNSIGNED NOT NULL,
 	Description TEXT NOT NULL,
 	CONSTRAINT rid PRIMARY KEY (ID),
-	CONSTRAINT FOREIGN KEY (ReviewerID) REFERENCES Users(ID) ON DELETE CASCADE,
-	CONSTRAINT FOREIGN KEY (P_id) REFERENCES Parkings(ID) ON DELETE CASCADE
+	FOREIGN KEY (ReviewerID) REFERENCES users(ID) ON DELETE CASCADE,
+	FOREIGN KEY (P_id) REFERENCES parkings(ID) ON DELETE CASCADE
 );
-	
-	
-	
-	
