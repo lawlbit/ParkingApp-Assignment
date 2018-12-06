@@ -13,8 +13,8 @@
             echo $e->getMessage();
             echo $e->getTraceAsString();
         }
-        header("Location: http://{$_SERVER['HTTP_HOST']}/AssignmentPHP/parking.php?parking={$_POST['pid']}");
+        header("Location: http://{$_SERVER['HTTP_HOST']}/parking.php?parking={$_POST['pid']}");
     } else {
-        header("Location: http://{$_SERVER['HTTP_HOST']}/AssignmentPHP/home.php");
+        header("Location: http://{$_SERVER['HTTP_HOST']}/home.php");
     }
 ?>

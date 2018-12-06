@@ -15,12 +15,12 @@
                 $stmnt = $pdo->prepare($sql);
                 $stmnt->execute([$_SESSION['loginID'], $_POST['name'], $_POST['descipt'],  $_POST['long'], $_POST['lat'], $_POST['location']]);
                 // Redirect only if executed properly
-                header("Location: http://{$_SERVER['HTTP_HOST']}/AssignmentPHP/management.php");
+                header("Location: http://{$_SERVER['HTTP_HOST']}/management.php");
             } catch (PDOException $e) {
                 echo $e->getMessage();
             }
         } else {
-            header("Location: http://{$_SERVER['HTTP_HOST']}/AssignmentPHP/submission.php?error=100");
+            header("Location: http://{$_SERVER['HTTP_HOST']}/submission.php?error=100");
         }
         
     }

@@ -18,8 +18,8 @@
     $rowC = $stmnt->rowCount();
     // Go to home with news of whether or not update worked.
     if (isset($_GET['unlock'])){
-        header("Location: http://{$_SERVER['HTTP_HOST']}/AssignmentPHP/management.php");
+        header("Location: http://{$_SERVER['HTTP_HOST']}/management.php");
     } else {
-        header("Location: http://{$_SERVER['HTTP_HOST']}/AssignmentPHP/home.php");
+        header("Location: http://{$_SERVER['HTTP_HOST']}/home.php");
     }
 ?>

@@ -15,5 +15,5 @@
         echo $e->getMessage();
         echo $e->getTraceAsString();
     }
-    header("Location: http://{$_SERVER['HTTP_HOST']}/AssignmentPHP/management.php");
+    header("Location: http://{$_SERVER['HTTP_HOST']}/management.php");
 ?>

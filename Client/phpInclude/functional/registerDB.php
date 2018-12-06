@@ -23,13 +23,13 @@ if (isset($_POST['regbtn'])) {
             $stmnt = $pdo->prepare($sql);
             $stmnt->execute([$_POST['fname'], $_POST['femail'], $_POST['ftele'], $hash, $_POST['fpassword'], $hash]);
             // Redirect only if executed properly
-            header("Location: http://{$_SERVER['HTTP_HOST']}/AssignmentPHP/index.php");
+            header("Location: http://{$_SERVER['HTTP_HOST']}/index.php");
         } catch (PDOException $e) {
             echo $e->getMessage();
         }
     } else {
         echo '<script> alert("Invalid input, restart..."); </script>';
-        header("Location: http://{$_SERVER['HTTP_HOST']}/AssignmentPHP/register.php?err=1");
+        header("Location: http://{$_SERVER['HTTP_HOST']}/register.php?err=1");
     }
 } else {
     $wow = $_POST['fname'];

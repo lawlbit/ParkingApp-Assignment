@@ -18,8 +18,8 @@
     $rowC = $stmnt->rowCount();
     // Go to home with news of whether or not update worked.
     if ($rowC == 0 ){
-        header("Location: http://{$_SERVER['HTTP_HOST']}/AssignmentPHP/home.php?fail=0");
+        header("Location: http://{$_SERVER['HTTP_HOST']}/home.php?fail=0");
     } else {
-        header("Location: http://{$_SERVER['HTTP_HOST']}/AssignmentPHP/home.php");
+        header("Location: http://{$_SERVER['HTTP_HOST']}/home.php");
     }
 ?>
