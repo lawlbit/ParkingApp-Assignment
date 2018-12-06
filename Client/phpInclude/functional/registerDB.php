@@ -23,7 +23,7 @@ if (isset($_POST['regbtn'])) {
             $stmnt = $pdo->prepare($sql);
             $stmnt->execute([$_POST['fname'], $_POST['femail'], $_POST['ftele'], $hash, $_POST['fpassword'], $hash]);
             // Redirect only if executed properly
-            header("Location: http://{$_SERVER['HTTP_HOST']}/AssignmentPHP/");
+            header("Location: http://{$_SERVER['HTTP_HOST']}/AssignmentPHP/index.php");
         } catch (PDOException $e) {
             echo $e->getMessage();
         }
